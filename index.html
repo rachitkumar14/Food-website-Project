@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <style>
+        *{
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+        }
+        body{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assests/food\ image.png);
+            background-size:  100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            width: 100vw;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        nav ul{
+            display: flex;
+            gap: 30px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #ffc233;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        button{
+        
+            font-size: 25px;
+            margin-right: 80px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            background-color: #ff505f;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+        main{
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+      justify-content: center;
+align-items: center;
+      font-size: 35px;
+      color:#ffc233;
+      font-weight: 900;
+        }
+        .main-button{
+
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            margin-top: 30px;
+            margin-left: 110px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+       /* footer */
+       footer{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 21%;
+        padding-right: 10px;
+       }
+       footer img{
+        height: 100px;
+        width: 100px;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo"><img src="assests/white-logo.png" alt="lOGO IMAGE"></div>
+            <ul><li><a href="/">OUR MENU</a> </li>
+            <li><a href="/">MAPS</a></li>
+            <li><a href="/">ABOUT</a></li>
+            <li><a href="/">CONTACT</a></li></ul>
+            <button id="nav_button">Order</button>
+        </nav>
+    </header>
+    <main>
+       <div class="left-main">
+        <h1>A Restaurant That <br> Only Serves <br> Delicious Food</h1>
+         <button class="main-button">Read Our Menu</button>
+       </div>
+    </main>
+    <footer>
+        <div><img src="assests/scroll.png" alt="photo"/></div>
+    </footer>
+</body>
+</html>
